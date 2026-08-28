@@ -21,3 +21,27 @@
  * 2. Store the temperature data in a single collection.
  * 3. Display the temperature data using console.log.
  */
+
+type temperatures = {
+    t0800: number,
+    t0900: number,
+    t1000: number,
+    t1100: number,
+    t1200: number,
+    t1300: number,
+    t1400: number,
+    t1500: number,
+}
+
+const temp: temperatures = {
+    t0800: 24.5,
+    t0900: 25.1,
+    t1000: 26.8,
+    t1100: 28.4,
+    t1200: 30.2,
+    t1300: 31.1,
+    t1400: 30.7,
+    t1500: 29.3,
+}
+
+console.log(temp)

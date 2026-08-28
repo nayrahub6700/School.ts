@@ -1,5 +1,5 @@
 /**
- * SMK Telkom Malang calculates each student's final score using several assessment components. 
+ * school calculates each student's final score using several assessment components. 
  * Before calculating the final grade, the system stores every assessment score as a separate variable. 
  * The homeroom teacher entered the following information for one student. 
  * The student named Nadia Putri has a student ID of ST2026045. She earned 88.5 on assignments, 
@@ -14,3 +14,15 @@
  * 3. Create the variable declarations using TypeScript.
  * 4. Display the student data using console.log.
  */
+
+const studentName: string = "Nadia Putri"
+const studentId: string = "ST2026045"
+const assignment: number = 88.5
+const midTerm: number = 84
+const final: number = 91.5
+
+console.log(studentName);
+console.log(studentId);
+console.log(assignment);
+console.log(midTerm);
+console.log(final)

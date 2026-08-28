@@ -14,3 +14,19 @@
  * 4. Declare all variables in TypeScript.
  * 5. Display the product data using console.log.
  */
+
+const keyboardPrice: number = 850000;
+const keyboardCode: string = "KBR-001";
+let stock: number = 18;
+const discount: number = 0.25;
+
+const quanity: number = 2;
+
+console.log("keyboard product code: ", keyboardCode);
+console.log("keyboard price: ", keyboardPrice);
+console.log("current stock: " , stock)
+console.log("quanity:", quanity);
+console.log("discount: ", discount);
+console.log("final price: ", (keyboardPrice-(keyboardPrice*discount))*2);
+stock = stock-quanity;
+console.log("stock: " , stock);
