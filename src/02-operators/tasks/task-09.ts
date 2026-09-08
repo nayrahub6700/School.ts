@@ -34,3 +34,36 @@
  * - Free shipping eligibility
 
  */
+
+const mechanicalKeyboardPrice: number = 850000
+const wirelessMousePrice: number = 275000
+const monitorStandPrice: number = 420000
+const mechanicalKeyboardQuantity: number = 1
+const wirelessMouseQuantity: number = 2
+const monitorStandQuantity: number = 1
+
+const voucherValue: number = 100000
+const premiumMember: boolean = true
+const rewardPointRate: number = 50000
+
+const productSubtotal: number = mechanicalKeyboardPrice*mechanicalKeyboardQuantity+wirelessMousePrice*wirelessMouseQuantity+monitorStandPrice*monitorStandQuantity
+const membershipDiscount: number = premiumMember ? productSubtotal * 0.1 : 0
+const paymentBeforeVoucher: number = productSubtotal - membershipDiscount
+
+const paymentBeforeTax: number = paymentBeforeVoucher - voucherValue
+const vat: number = paymentBeforeTax * 0.11
+const finalPayment: number = paymentBeforeTax + vat
+const rewardPoints: number = Math.floor(paymentBeforeTax / rewardPointRate)
+const freeShippingEligibility: boolean = premiumMember || paymentBeforeTax > 1500000
+
+const billNoTax: number = productSubtotal - membershipDiscount - voucherValue
+const finalbill
+
+console.log("Product Subtotal: ", productSubtotal)
+console.log("Membership Discount: ", membershipDiscount)
+console.log("Payment Before Voucher: ", paymentBeforeVoucher)
+console.log("Payment Before Tax: ", paymentBeforeTax)
+console.log("VAT: ", vat)
+console.log("Final Payment: ", finalPayment)
+console.log("Reward Points: ", rewardPoints)
+console.log("Free Shipping Eligibility: ", freeShippingEligibility)

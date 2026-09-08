@@ -46,7 +46,7 @@ const employee3: attendanceRecord = {
     date: "15/08/2026",
     checkinTime: "",
     chekouttime: "",
-    totalHour: "",
+    totalHour: 0,
     present: false,
 }
 

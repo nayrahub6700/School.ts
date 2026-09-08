@@ -14,3 +14,18 @@
  *  - Final payment
  * 2. Display the calculation results.
  */
+
+const friedRicePrice: number = 18000
+let friedRiceQuantity: number = 3
+const waterBottlePrice: number = 10000
+let waterBottleQuantity: number = 2
+let discountEligible: boolean = true
+const discountAmount: number = 10000
+
+let total: number = waterBottlePrice*waterBottleQuantity+friedRicePrice*friedRiceQuantity
+let grandTotal = discountEligible === true ? total - discountAmount : total;
+
+console.log("Total food price: ", friedRicePrice*friedRiceQuantity)
+console.log("Total drinks price: ", waterBottlePrice*waterBottleQuantity)
+console.log("Total: ", total)
+console.log("Final total: ", grandTotal)

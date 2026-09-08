@@ -26,3 +26,4 @@ console.log(studentId);
 console.log(assignment);
 console.log(midTerm);
 console.log(final)
+

@@ -21,3 +21,15 @@
  * - Final payment
  * - Whether the guest is eligible for free breakfast
  */
+const roomPrice: number =  650000
+let nights: number = 4
+let vipMember: boolean = true
+let service: number = 120000
+
+const subtotal: number = roomPrice*nights
+const vipTotal: number = vipMember? subtotal-subtotal*0.12 : subtotal
+const finalTotal: number = vipTotal+vipTotal*0.11+service
+
+console.log("subtotal: ", subtotal)
+console.log("2ndTotal: ", vipTotal)
+console.log("final total: ", finalTotal)

@@ -48,3 +48,4 @@ console.log(`Score ${score}: ${result}`);
 console.log("\n=== Typeof ===");
 console.log('typeof "hello":', typeof "hello");
 console.log("typeof 42:", typeof 42);
+

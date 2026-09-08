@@ -13,3 +13,15 @@
  * - Discount amount
  * - Final payment
  */
+
+const hour: number = 7
+const minute: number = 35
+const totalMinute: number = hour*60+minute
+const hourStarted: number = totalMinute/60 > hour? hour+1 : hour
+const bill: number = hourStarted*8000 
+const discountAmount : number = bill*0.15
+const finalAmount: number = bill-discountAmount
+
+console.log("subtotal: ", bill)
+console.log("discount: ", discountAmount)
+console.log("finaltotal: ", finalAmount)

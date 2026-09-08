@@ -36,6 +36,3 @@ const student3: Student = {
 console.log(student1);
 console.log(student2);
 console.log(student3);
-
-const student4: Student = {studentId: "ST2026046", fullName: "fwen",age: 67,}
-console.log(student4.studentId)

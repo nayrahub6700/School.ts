@@ -49,8 +49,8 @@ const student2: registration = {
 };
 
 const student3: registration = {
-    studentID: "XIR-029",
-    studentname: "Bartholomew Waffleton",
+    studentID: "XIR-031",
+    studentname: "Zorp McSnibble",
     studentGradeLevel: 10,
     courseID: "TS-345678",
     courseTitle: "Python Programming Fundamentals",
